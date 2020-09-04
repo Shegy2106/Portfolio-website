@@ -1,0 +1,283 @@
+/*Global styles
+
+Light Gray - DAD2D8
+Dark Gray - 343434
+White - F7FFF7
+Oxford Blue - 091540
+Cornflower Blue - 7692FF
+Baby Blue eyes - ABD2FA
+Y in Mn Blue - 3D518C
+Persian Blue - 1B2CC1
+
+Red Link - FF1800
+Orange Link - EC9A29
+
+font-family: 'Abel', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+-----------------------------------*/
+
+
+body{
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size:15px;
+  line-height: 1.5;
+}
+img
+{
+  width: 300px;
+}
+a{
+  color: #EC9A29
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+h1,h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 1;
+}
+h2{
+  font-size: 20px;
+  margin: 0;
+}
+
+.content-wrap{
+  max-width: 800px;
+  width:85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+h3{
+  margin-bottom: 0;
+}
+
+.item-details h3 + p{
+  font-style: italic;
+}
+
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section{
+  border-bottom: 1px solid #343434;
+  padding: 25px 0;
+}
+
+.divider >section:last-of-type{
+  border-bottom: none;
+}
+
+/* Profile
+-----------------------------------*/
+header {
+  text-align: center;
+  background: #091540 ;
+  color: #F7FFF7
+}
+
+/* Projects
+-----------------------------------*/
+.projects{
+   ----background: #3D518C;
+   ----color: #F7FFF7;
+}
+.projects a {
+  color: #FF1800;
+}
+
+.projects .btn {
+  --color: #F7FFF7;
+  color: #343434;
+  --background: #ABD2FA;
+  border: 1px solid #343434;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover{
+  background: #343434;
+  color: #F7FFF7;
+}
+
+.project-item{
+  overflow: hidden;
+}
+.project-item img{
+  float: left;
+  margin-right: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.project-item h3{
+  margin-top: 0;
+}
+
+.projects .project-item:last-child img{
+  background-color: #FFFFFF
+}
+
+.hover-container {
+  position: relative;
+  width: 50%;
+  border: 1px solid #343434;
+  float: left;
+  margin-right: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFFFFF;
+}
+
+.hover-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.hover-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+/* Work Experience
+-----------------------------------*/
+.work-experience{
+  background: #3D518C;
+  color: #F7FFF7
+}
+
+.job-item{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+
+/* Education
+-----------------------------------*/
+.education {
+  background-image: url(../images/education.jpg);
+  background-size: cover;
+  background-position: top left;
+  padding: 100px;
+  ---background: #3D518C;
+  ---color: #F7FFF7
+}
+.education p{
+  width: 60%;
+}
+
+
+/* Contact Info
+-----------------------------------*/
+footer{
+  background-color: #091540;
+  color: #F7FFF7;
+  text-align: center;
+}
+
+.contact-list{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list a{
+  padding: 15px;
+  display: inline-block;
+}
+
+
+/* Responsive
+-----------------------------------*/
+
+@media screen and (max-width:750px){
+
+.project-item img {
+    float: none;
+    margin-bottom: 20px;
+}
+
+.hover-container{
+  float: none;
+  margin-bottom: 20px;
+  width: 50%;
+  height: 50%;
+}
+
+.projects .btn{
+  padding: 1em;
+  font-size: 1em;
+}
+
+.job-item {
+  display: inline;
+}
+
+.job-summary{
+  padding: 20px 0;
+}
+
+.education {
+  background-position: left top;
+}
+
+.contact-list{
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+  justify-content: center;
+}
+
+.divider > section:last-of-type {
+    padding-bottom: 0px;
+}
+
+}
