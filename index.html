@@ -8,27 +8,37 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+
     <main>
+
+      <!-- ***************************  NAVBAR  ****************************** -->
+      <div id="navbar" class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#">About</a>
+      </div>
+
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
-        <div class="content-wrap">
+        <div id="welcome-section" class="content-wrap">
           <h1>Darko Šegvić</h1>
           <h2>Software Developer</h2>
           <p>Add your profile copy here. Add more paragraphs or links as needed. Here is some dummy text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.</p>
-          <p>Add another paragraph  if needed.</p>
+          <p>Add another paragraph  if needed. My <a id="profile-link" href="https://github.com/Shegy2106" target="_blank">Github</a></p>
         </div>
       </header>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class="projects">
+      <section id="projects" class="projects">
         <div class="content-wrap divider">
           <h2>Featured Projects</h2>
-          <p>View selected projects below. More information can be found at <a href="http://christinatruong.com">christinatruong.com</a>.</p>
+          <p>View selected projects below. More information can be found at <a href="#">#</a>.</p>
 
           <!-- Project 1 -->
-          <section class="project-item">
+          <section class="project-item project-tile">
             <div class="hover-container">
-              <img src="images/car-thumbnail.jpg" alt="Car" class="image">
+            <img src="images/car-thumbnail.jpg" alt="Car" class="image">
               <div class="overlay">
                 <div class="text">
                   <a class="btn" href="#" target="_blank">Make a request for code</a>
@@ -41,12 +51,12 @@
           </section>
 
           <!-- Project 2 -->
-          <section class="project-item">
+          <section class="project-item project-tile">
             <div class="hover-container">
               <img src="images/split-thumbnail.jpg" alt="Travel" class="image">
               <div class="overlay">
                 <div class="text">
-                  <a class="btn" href="#" target="_blank">View project</a>
+                  <a class="btn" href="https://github.com/Shegy2106/STravel" target="_blank">View project</a>
                 </div>
               </div>
             </div>
@@ -56,7 +66,7 @@
           </section>
 
           <!-- Project 3 -->
-          <section class="project-item">
+          <section class="project-item project-tile">
             <div class="hover-container">
               <img src="images/administrator-thumbnail.jpg" alt="Administrator" class="image">
               <div class="overlay">
@@ -72,7 +82,7 @@
           </section>
 
           <!-- Project 4 -->
-          <section class="project-item">
+          <section class="project-item project-tile">
             <div class="hover-container">
               <img src="images/machinelearning-thumbnail.jpg" alt="Machine learning" class="image">
               <div class="overlay">
@@ -88,7 +98,7 @@
           </section>
 
           <!-- Project 5 -->
-          <section class="project-item">
+          <section class="project-item project-tile">
             <div class="hover-container">
               <img src="images/website-thumbnail.jpg" alt="Website" class="image">
               <div class="overlay">
@@ -107,7 +117,7 @@
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="work-experience">
+      <section id="work-experience" class="work-experience">
         <div class="content-wrap item-details divider">
           <h2>Work Experience</h2>
           <!--<p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
